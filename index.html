@@ -34,6 +34,21 @@
 
                 gtag('config', 'G-LEYLXK525Q');
         </script>
+
+
+
+
+        <!-- Ajoutez le SDK EmailJS -->
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+           (function(){
+              emailjs.init({
+                publicKey: "R4yDaEai979NcXge6",
+              });
+           })();
+        </script>
                 
                     
     
@@ -91,6 +106,7 @@
                     </svg>
                 </div>
             </section>
+        </main>
 
             <!--===== ABOUT =====-->
             <section class="about section " id="about">
@@ -226,9 +242,9 @@
                                 <span class="skills__name">VBA</span>
                             </div>
                         </div>
-                    </div>
+                 <!--==   </div>
                     
-            <div>
+            <div>==-->
 
                         <div class="skills__data">
                             <div class="skills__names">
@@ -270,43 +286,41 @@
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
-
+        
                 <div class="about__container bd-grid">
                     <div class="contact__container bd-grid">
-                        <form action="" class="contact__form">
-                            <input type="text" placeholder="Name" class="contact__input">
-                            <input type="mail" placeholder="Email" class="contact__input">
-                            <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                            <input type="button" value="Send" class="contact__button button">
+                        <form id="contact-form" class="contact__form">
+                            <input type="text" id="from_name" name="from_name" placeholder="Name" class="contact__input" required>
+                            <input type="email" id="from_email" name="from_email" placeholder="Email" class="contact__input" required>
+                            <textarea name="message" id="message" cols="0" rows="10" placeholder="Message" class="contact__input" required></textarea>
+                            <input type="submit" value="Send" class="contact__button button">
                         </form>
                     </div>
                     <div>
                         <div class="skills__data">
-                                    <div class="skills__names">
-                                        <i class="fa-solid fa-envelope skills__icon" style="color: #3e6ff4;"></i>
-                                        <a href="mailto:ayoubkamel991@gmail.com" target="_blank" class="skills__name">ayoubkamel991@gmail.com</a>
-                                    </div>
-
+                            <div class="skills__names">
+                                <i class="fa-solid fa-envelope skills__icon" style="color: #3e6ff4;"></i>
+                                <a href="mailto:ayoubkamel991@gmail.com" target="_blank" class="skills__name">ayoubkamel991@gmail.com</a>
                             </div>
-                            <div class="skills__data">
-                                    <div class="skills__names">
-                                        <i class="fa-solid fa-phone skills__icon" style="color: #005eff;"></i>
-                                        <a href="tel:+212772875656" class="skills__name">07 72 87 56 56</a>
-                                    </div>
-                            </div>
-                            
-                            <div class="skills__data">
-                                    <div class="skills__names">
-                                        <i class='bx bxl-linkedin skills__icon'></i>
-                                        <a href="https://www.linkedin.com/in/ayoub-kamel/" target="_blank" class="skills__name">Ayoub Kamel</a>
-                                    </div>
-                            </div>  
                         </div>
-                    </div>                                 
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class="fa-solid fa-phone skills__icon" style="color: #005eff;"></i>
+                                <a href="tel:+212772875656" class="skills__name">07 72 87 56 56</a>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-linkedin skills__icon'></i>
+                                <a href="https://www.linkedin.com/in/ayoub-kamel/" target="_blank" class="skills__name">Ayoub Kamel</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section>     
+            </section>
+
         
-        </main>
+        
 
         <!--===== FOOTER =====-->
         <footer class="footer">
@@ -325,5 +339,26 @@
 
         <!--===== MAIN JS =====-->
         <script src="./assets/js/main.js"></script>
+
+
+
+          <script type="text/javascript">
+                // Ajoutez un événement pour gérer l'envoi du formulaire
+                document.getElementById('contact-form').addEventListener('submit', function(event) {
+                    event.preventDefault();
+        
+                    // Ces valeurs doivent être vos propres Service ID et Template ID
+                    const serviceID = 'service_6notghb';
+                    const templateID = 'template_0x9i09b';
+        
+                    // Envoyer le formulaire avec EmailJS
+                    emailjs.sendForm(serviceID, templateID, this)
+                        .then(() => {
+                            alert('E-mail envoyé avec succès!');
+                        }, (err) => {
+                            alert('Échec de l\'envoi de l\'e-mail!\n Réponse:\n ' + JSON.stringify(err));
+                        });
+                });
+            </script>
     </body>
 </html>
