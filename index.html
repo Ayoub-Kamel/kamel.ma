@@ -1,389 +1,239 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Ayoub Kamel</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Unbounded:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.lang="fr";</script>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<header class="top">
+  <div class="top-in">
+    <a class="logo" href="#top">Ayoub<span>.</span>K</a>
+    <nav class="nav" aria-label="Navigation">
+      <a href="#profil">Profil</a>
+      <a href="#projets">Projets</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#competences">Compétences</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="pill-s" href="en.html" hreflang="en" aria-label="Read this page in English">EN</a>
+  </div>
+</header>
 
-        <link rel="stylesheet" href="./assets/css/styles.css">
-        <link rel="sthrtcut icon " type="x-icon" href="assets/img/AyoubKamel.png">
+<main class="wrap" id="top">
+  <div class="bg" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div></div>
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css" integrity="sha512-LeCmts7kEi09nKc+DwGJqDV+dNQi/W8/qb0oUSsBLzTYiBwxj0KBlAow2//jV7jwEHwSCPShRN2+IWwWcn1x7Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <div class="hero">
+    <div class="h-name">
+      <p class="hello">Bonjour, je suis</p>
+      <h1 class="split">Ayoub<br><span class="acc">Kamel</span></h1>
+    </div>
+    <div class="h-photo">
+      <img src="portrait.png" width="487" height="669" alt="Portrait d'Ayoub Kamel">
+    </div>
+    <div class="h-role">
+      <p class="r-small" data-words='["Ingénieur consultant","Marchés de capitaux","Pricing & risque","Gestion de portefeuille"]'><span class="typed">Ingénieur consultant</span></p>
+      <p class="r-big">Finance</p>
+      <p class="r-last split">de marché</p>
+    </div>
+    <div class="social">
+      <a href="https://www.linkedin.com/in/ayoub-kamel/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+      <a href="https://github.com/Ayoub-Kamel" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+    </div>
+    <a class="cv" href="https://kamel.ma/assets/CV%20Ayoub%20KAMEL.pdf" target="_blank" rel="noopener">Mon CV ↗
+      <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><rect x="3" y="1.5" width="10" height="13" rx="1.5"/><path d="M5.5 5h5M5.5 8h5M5.5 11h3"/></svg>
+    </a>
+  </div>
 
-        <title>Portfolio Ayoub Kamel</title>
-        <meta name="description" content="je suis ayoub kamel etudiant en master actuariat et finance et voici mon portefiel.">
+  <section id="profil">
+    <p class="eyebrow">Profil</p>
+    <h2 class="sec-title">Les marchés de capitaux, <span class="acc">du modèle au système</span></h2>
+    <div class="about">
+      <div>
+        <p>Je suis <strong>ingénieur consultant en marchés de capitaux</strong>, au contact de systèmes financiers et d'infrastructures de gestion de portefeuille.</p>
+        <p>Je construis des modèles de pricing, de risque et d'allocation, et je vise des postes <strong>quantitatifs côté gestion d'actifs</strong>. Mon parcours de conseil me donne une vision de bout en bout, du modèle à son exécution en production.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Poste</dt><dd>Perenity Software</dd></div>
+        <div><dt>Formation</dt><dd>Master Actuariat et Finance</dd></div>
+        <div><dt>Cibles</dt><dd>Quant developer, quant analyst, analyste risque, puis quant researcher</dd></div>
+        <div><dt>Lieu</dt><dd>Maroc</dd></div>
+      </dl>
+    </div>
+  </section>
 
-            <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NL1LVWETYL"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-NL1LVWETYL');
-        </script>
-                <!-- jdid -->
-                <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LEYLXK525Q"></script>
-        <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
+  <!-- YIELD CURVE SECTION (hidden: set SHOW_CURVE = True in build.py)
+  <section id="taux">
+    <p class="eyebrow">Courbe des taux</p>
+    <h2 class="sec-title">Une courbe <span class="acc">Nelson–Siegel</span> à manipuler</h2>
+    <p class="sec-sub">Un modèle à quatre paramètres, trois formes de courbe. Choisissez-en une, laissez-les défiler, ou survolez la courbe pour lire les taux.</p>
+    <div class="curve-wrap">
+      <div class="curve-card">
+        <div class="ctl" role="group" aria-label="Courbe des taux">
+          <button type="button" data-shape="0" aria-pressed="true">Normale</button>
+          <button type="button" data-shape="1" aria-pressed="false">Inversée</button>
+          <button type="button" data-shape="2" aria-pressed="false">Bosselée</button>
+          <button type="button" data-shape="auto" aria-pressed="false">Auto</button>
+        </div>
+        <canvas id="curve" role="img" aria-label="Courbe des taux animée, modèle Nelson-Siegel avec paramètres illustratifs" data-shapes='["courbe normale","courbe inversée","courbe bosselée"]'></canvas>
+        <div class="curve-cap">
+          <span>Nelson–Siegel · paramètres illustratifs</span>
+          <span>Pente 2s10s : <b id="slope" data-unit="pb">+0 pb</b></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  -->
 
-                gtag('config', 'G-LEYLXK525Q');
-        </script>
+  <section id="projets">
+    <p class="eyebrow">Projets</p>
+    <h2 class="sec-title">Je construis des <span class="acc">modèles</span> qui tournent</h2>
+    <div class="filters" role="group" aria-label="Filtrer les projets">
+      <button type="button" data-f="all" aria-pressed="true">Tous</button>
+      <button type="button" data-f="taux" aria-pressed="false">Taux & dérivés</button>
+      <button type="button" data-f="technique" aria-pressed="false">Analyse technique</button>
+      <button type="button" data-f="risque" aria-pressed="false">Portefeuille & risque</button>
+      <button type="button" data-f="ml" aria-pressed="false">Séries & ML</button>
+      <button type="button" data-f="outils" aria-pressed="false">Outils</button>
+    </div>
+    <div class="grid" id="grid">
+      <a class="card" data-cat="taux" href="https://www.bcpayoubkamel.tech/" target="_blank" rel="noopener"><span class="num"></span><div><span class="tag">Taux & dérivés</span><h3>Pricing des obligations</h3></div><span class="src">Site web ↗</span></a>
+      <a class="card" data-cat="taux" href="https://drive.google.com/file/d/1Mabn7eFxiTonstooDIqXXkiKRAuujCUU/view?usp=sharing" target="_blank" rel="noopener"><span class="num"></span><div><span class="tag">Taux & dérivés</span><h3>Pricing des taux forward</h3></div><span class="src">Drive ↗</span></a>
+      <a class="card" data-cat="taux" href="https://drive.google.com/file/d/1Mabn7eFxiTonstooDIqXXkiKRAuujCUU/view?usp=sharing" target="_blank" rel="noopener"><span class="num"></span><div><span class="tag">Taux & dérivés</span><h3>Pricing des options</h3></div><span class="src">Drive ↗</span></a>
+      <a class="card" data-cat="risque" href="https://drive.google.com/file/d/13BaNPB31009Vk21qRz3pfpprnQJZrE1U/view?usp=sharing" target="_blank" rel="noopener"><span class="num"></span><div><span class="tag">Portefeuille & risque</span><h3>Frontière efficiente de Markowitz</h3></div><span class="src">Drive ↗</span></a>
+      <a class="card" data-cat="risque" href="https://www.kaggle.com/code/ayoubkamel/ratio-de-sharpe" target="_blank" rel="noopener"><span class="num"></span><div><span class="tag">Portefeuille & risque</span><h3>Ratio de Sharpe</h3></div><span class="src">Kaggle ↗</span></a>
+      <a class="card" data-cat="risque" href="https://colab.research.google.com/drive/1csXJ4ZkbJiDf5wQ4_kfyNAeZDC-nnX9Q#scrollTo=sLu5CjQnK56g" target="_blank" rel="noopener"><span class="num"></span><div><span class="tag">Portefeuille & risque</span><h3>Value at Risk (VaR)</h3></div><span class="src">Colab ↗</span></a>
+      <div class="card" data-cat="risque"><span class="num"></span><div><span class="tag">Portefeuille & risque</span><h3>Simulation Monte Carlo</h3></div><span class="src off">Lien à venir</span></div>
+      <a class="card" data-cat="risque" href="https://drive.google.com/drive/folders/1zagsCtFi2MKD0oTywIaFDMEymBTd_azq?usp=drive_link" target="_blank" rel="noopener"><span class="num"></span><div><span class="tag">Portefeuille & risque</span><h3>Credit scoring</h3></div><span class="src">Drive ↗</span></a>
+      <a class="card" data-cat="technique" href="https://drive.google.com/file/d/1t0rE2QC9zNjKZiMy201FVcgJj5Ct6lx-/view?usp=sharing" target="_blank" rel="noopener"><span class="num"></span><div><span class="tag">Analyse technique</span><h3>MACD</h3></div><span class="src">Drive ↗</span></a>
+      <a class="card" data-cat="technique" href="https://drive.google.com/file/d/1rO6rqFaavmwRbBv5Nsbc-uTRsEGCfRs1/view?usp=sharing" target="_blank" rel="noopener"><span class="num"></span><div><span class="tag">Analyse technique</span><h3>MMS</h3></div><span class="src">Drive ↗</span></a>
+      <a class="card" data-cat="technique" href="https://drive.google.com/file/d/1ZUn9KcDIXI8gghM-ZspJ47xGkn_NDNld/view?usp=sharing" target="_blank" rel="noopener"><span class="num"></span><div><span class="tag">Analyse technique</span><h3>Oscillateur stochastique</h3></div><span class="src">Drive ↗</span></a>
+      <a class="card" data-cat="technique" href="https://drive.google.com/file/d/1yRmofG99SST9muFp4BXlAJ6tRrqro_Gw/view?usp=sharing" target="_blank" rel="noopener"><span class="num"></span><div><span class="tag">Analyse technique</span><h3>Williams %R</h3></div><span class="src">Drive ↗</span></a>
+      <a class="card" data-cat="technique" href="https://drive.google.com/file/d/1yhnfxXp2px5q815b0VUwt26OBjDOOoF8/view?usp=sharing" target="_blank" rel="noopener"><span class="num"></span><div><span class="tag">Analyse technique</span><h3>RSI</h3></div><span class="src">Drive ↗</span></a>
+      <a class="card" data-cat="technique" href="https://drive.google.com/file/d/155zSS99X3NWVf2kWE3ebw7eYvkcrSahj/view?usp=sharing" target="_blank" rel="noopener"><span class="num"></span><div><span class="tag">Analyse technique</span><h3>Ichimoku</h3></div><span class="src">Drive ↗</span></a>
+      <a class="card" data-cat="ml" href="https://colab.research.google.com/drive/1ept0Frx27l2RfmZRSj9Oum5j0uNtJRij#scrollTo=8slsjHJ61g-G" target="_blank" rel="noopener"><span class="num"></span><div><span class="tag">Séries temporelles & ML</span><h3>Prévision par réseau LSTM</h3></div><span class="src">Colab ↗</span></a>
+      <a class="card" data-cat="ml" href="https://www.kaggle.com/code/ayoubkamel/mod-le-arima-avec-python-pr-visions-de-s-ries-te" target="_blank" rel="noopener"><span class="num"></span><div><span class="tag">Séries temporelles & ML</span><h3>Prévision de prix avec ARIMA</h3></div><span class="src">Kaggle ↗</span></a>
+      <a class="card" data-cat="outils" href="https://github.com/Ayoub-Kamel/KAW-Scraper/tree/master" target="_blank" rel="noopener"><span class="num"></span><div><span class="tag">Outils</span><h3>KAW Scraper</h3></div><span class="src">GitHub ↗</span></a>
+    </div>
+  </section>
 
+  <section id="parcours">
+    <p class="eyebrow">Parcours</p>
+    <h2 class="sec-title">Mon <span class="acc">parcours</span></h2>
+    <div class="tabs" role="tablist">
+      <button type="button" role="tab" data-tab="exp" aria-selected="true">Expérience</button>
+      <button type="button" role="tab" data-tab="edu" aria-selected="false">Formation</button>
+    </div>
+    <div class="panel wide" data-panel="exp" role="tabpanel">
+      <div class="timeline">
+        <div class="tl-line" aria-hidden="true"><div class="tl-fill"></div></div>
+        <div class="tl-item">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <div class="entry">
+            <span class="tl-tag">Poste actuel</span>
+            <h3>Ingénieur consultant, marchés de capitaux</h3>
+            <div class="who">Perenity Software</div>
+            <p>Missions au contact de systèmes financiers et d'infrastructures de gestion de portefeuille.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <div class="entry">
+            <h3>Equity Trader</h3>
+            <div class="who">Banque Centrale Populaire (BCP)</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <div class="entry">
+            <h3>Responsable Gestion des Fournisseurs IT</h3>
+            <div class="who">Crédit du Maroc</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <div class="entry">
+            <span class="tl-tag">Début de parcours</span>
+            <h3>Gestion de Trésorerie</h3>
+            <div class="who">CNSS</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel" data-panel="edu" role="tabpanel" hidden>
+      <div class="entry">
+        <h3>Master Actuariat et Finance</h3>
+        <div class="who">Actuariat et finance</div>
+        <p>Base en probabilités, statistiques et modélisation financière.</p>
+      </div>
+    </div>
+  </section>
 
+  <section id="certificats">
+    <p class="eyebrow">Certificats</p>
+    <h2 class="sec-title">Formations <span class="acc">validées</span></h2>
+    <div class="marquee">
+      <div class="track" id="track">
+        <div class="group">
+          <a class="cert" href="https://certificates.cs50.io/176ee9b6-b42b-4c6d-9310-7366da68ce3c.pdf?size=letter" target="_blank" rel="noopener"><b>CS50</b><span>Voir le certificat ↗</span></a>
+          <a class="cert" href="https://www.coursera.org/account/accomplishments/certificate/KRUUBJRCD43S" target="_blank" rel="noopener"><b>Coursera</b><span>Voir le certificat ↗</span></a>
+          <a class="cert" href="https://www.coursera.org/account/accomplishments/certificate/EM6Z83ELDFXJ" target="_blank" rel="noopener"><b>Coursera · CFA</b><span>Voir le certificat ↗</span></a>
+          <a class="cert" href="https://www.coursera.org/account/accomplishments/certificate/2HFC9XKGWBET" target="_blank" rel="noopener"><b>Coursera · Google</b><span>Voir le certificat ↗</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section id="competences">
+    <p class="eyebrow">Ce que je propose</p>
+    <h2 class="sec-title">Compétences <span class="acc">techniques</span> et financières</h2>
+    <div class="two">
+      <div class="box">
+        <h3>Langages et outils</h3>
+        <p>Le socle pour modéliser, automatiser et livrer.</p>
+        <ul class="chips"><li>Python</li><li>VBA</li><li>Excel</li><li>MySQL</li><li>JavaScript</li><li>HTML5</li><li>CSS3</li><li>SPSS</li><li>EViews</li><li>MetaTrader</li><li>i-net Crystal-Clear</li><li>Crystal Reports</li><li>Oracle DB</li></ul>
+      </div>
+      <div class="box">
+        <h3>Domaines de finance</h3>
+        <p>Pricing, risque et allocation, appuyés sur des systèmes réels.</p>
+        <ul class="chips">
+          <li>Pricing de taux</li>
+          <li>Options</li>
+          <li>Markowitz</li>
+          <li>VaR</li>
+          <li>Monte Carlo</li>
+          <li>Credit scoring</li>
+          <li>ARIMA</li>
+          <li>LSTM</li>
+          <li>Analyse technique</li>
+          <li>Gestion de portefeuille</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-        <!-- Ajoutez le SDK EmailJS -->
-        <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-        </script>
-        <script type="text/javascript">
-           (function(){
-              emailjs.init({
-                publicKey: "R4yDaEai979NcXge6",
-              });
-           })();
-        </script>
-                
-                    
-    
-    </head>
-    <body>
+  <section id="contact">
+    <div class="contact">
+      <div>
+        <p class="eyebrow" style="text-align:left">Contact</p>
+        <h2>Parlons de votre prochain <span class="acc">projet</span></h2>
+        <div class="mail-addr" id="addr">ayoub@kamel.ma</div>
+        <button class="btn" id="copy" type="button" data-done="Copié">Copier l'e-mail</button>
+      </div>
+      <dl class="info">
+        <div><dt>E-mail</dt><dd>ayoub@kamel.ma</dd></div>
+        <div><dt>Téléphone</dt><dd>+212 7 72 87 56 56</dd></div>
+        <div><dt>Lieu</dt><dd>Maroc</dd></div>
+        <div><dt>Réseaux</dt><dd><a href="https://www.linkedin.com/in/ayoub-kamel/" target="_blank" rel="noopener">LinkedIn ↗</a> · <a href="https://github.com/Ayoub-Kamel" target="_blank" rel="noopener">GitHub ↗</a></dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
 
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <img src="assets/img/AyoubKamel.png" class="nav__logo">
-                </div>
+<footer>
+  <span>© 2026 Ayoub Kamel</span>
+  <span>Tous droits réservés</span>
+</footer>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                        <li class="nav__item"><a href="assets/CV Ayoub KAMEL.pdf" class="nav__link" target="_blank">My Resume</a></li>
-
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I am <span class="home__title-color">Ayoub</span><br></h1>
-
-                    <a href="#contact" class="button">Contact</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/ayoub-kamel/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-
-                </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="assets/img/Ayoub_Kamel.png"/>
-                        </g>
-                    </svg>
-                </div>
-            </section>
-        </main>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/ayoubkamel3.jpg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I am Ayoub Kamel</h2>
-                        <p class="about__text"> a passionate and creative individual seeking new opportunities in the finance market. With a solid education and practical experience, I am determined to achieve excellence in everything I undertake. I am a curious and open-minded individual, constantly seeking new inspiration to fuel my creativity.</p>           
-                    </div>                                   
-                </div>
-            </section>
-
-
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
-
-                <div class="work__container bd-grid">
-
-                    
-                    <a href="https://www.bcpayoubkamel.tech/" class="work__img">
-                        <img src="assets/img/pricing des obligations.png" alt="">
-                    </a>
-                    <!--<a href="https://pricing-obligation-bcp-git-main-ayoub-kamels-projects.vercel.app/" class="work__img">=-->
-                    <a href="https://drive.google.com/file/d/1Mabn7eFxiTonstooDIqXXkiKRAuujCUU/view?usp=sharing" class="work__img">
-                        <img src="assets/img/Pricing_des_taux_Forward_Ayoub_Kamel.png" alt="">
-                    </a>
-                    
-                    <a href="https://drive.google.com/file/d/1Mabn7eFxiTonstooDIqXXkiKRAuujCUU/view?usp=sharing" class="work__img">
-                        <img src="assets/img/Pricing_des_options_Ayoub_Kamel.png" alt="">
-                    </a>
-
-
-                    <a href="https://github.com/Ayoub-Kamel/KAW-Scraper/tree/master" class="work__img">
-                        <img src="assets/img/wak scraper.png" alt="">
-                    </a>
-
-                    <a href="https://github.com/Ayoub-Kamel/KAW-Scraper/tree/master33" class="work__img">
-                        <img src="assets/img/FPKAMEL.png" alt="">
-                    </a>
-                    
-                    
-                    <a href="https://drive.google.com/file/d/1t0rE2QC9zNjKZiMy201FVcgJj5Ct6lx-/view?usp=sharing" class="work__img">
-                        <img src="assets/img/MACD.png" alt="">
-                    </a>
-                    <a href="https://drive.google.com/file/d/1rO6rqFaavmwRbBv5Nsbc-uTRsEGCfRs1/view?usp=sharing" class="work__img">
-                        <img src="assets/img/MMS.png" alt="">
-                    </a>
-                    <a href="https://drive.google.com/file/d/1ZUn9KcDIXI8gghM-ZspJ47xGkn_NDNld/view?usp=sharing" class="work__img">
-                        <img src="assets/img/Stochastic.png" alt="">
-                    </a>
-                    <a href="https://drive.google.com/file/d/1yRmofG99SST9muFp4BXlAJ6tRrqro_Gw/view?usp=sharing" class="work__img">
-                        <img src="assets/img/williams.png" alt="">
-                    </a>
-                    <a href="https://drive.google.com/file/d/1yhnfxXp2px5q815b0VUwt26OBjDOOoF8/view?usp=sharing" class="work__img">
-                        <img src="assets/img/RSI.png" alt="">
-                    </a>
-                    <a href="https://drive.google.com/file/d/155zSS99X3NWVf2kWE3ebw7eYvkcrSahj/view?usp=sharing" class="work__img">
-                        <img src="assets/img/ichimoku.png" alt="">
-                    </a>
-                    <a href="https://colab.research.google.com/drive/1ept0Frx27l2RfmZRSj9Oum5j0uNtJRij#scrollTo=8slsjHJ61g-G" class="work__img">
-                        <img src="assets/img/LSTM.jpg" alt="">
-                    </a>
-                    <a href="https://drive.google.com/file/d/13BaNPB31009Vk21qRz3pfpprnQJZrE1U/view?usp=sharing" class="work__img">
-                        <img src="assets/img/markowitz_efficient_frontier.png" alt="">
-                    </a>
-                    <!---<a href="https://colab.research.google.com/drive/1mCis_aT-a4uMbCtqamDPmTycoNGrVqLs?usp=sharing" class="work__img">==-->
-                      <!---  <img src="assets/img/Markowitz_Efficient_Frontier_ayoub_kamel.jpg" alt="">
-                    </a>==-->
-                    <a href="https://www.kaggle.com/code/ayoubkamel/ratio-de-sharpe" class="work__img">
-                        <img src="assets/img/ratiosharpe_ayoub_kamel.png" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/simulation_monte_carlo_ayoub_kamel.jpg" alt="">
-                    </a>
-                    <a href="https://colab.research.google.com/drive/1csXJ4ZkbJiDf5wQ4_kfyNAeZDC-nnX9Q#scrollTo=sLu5CjQnK56g" class="work__img">
-                        <img src="assets/img/Value At Risk (VAR) Ayoub Kamel.png" alt="">
-                    </a>
-                    <a href="https://drive.google.com/drive/folders/1zagsCtFi2MKD0oTywIaFDMEymBTd_azq?usp=drive_link" class="work__img">
-                        <img src="assets/img/Credit Scoring Ayoub Kamel.png" alt="">
-                    </a>
-                    <a href="https://www.kaggle.com/code/ayoubkamel/mod-le-arima-avec-python-pr-visions-de-s-ries-te" class="work__img">
-                        <img src="assets/img/prediction_price _ayoub_kamel.png" alt="">
-                    </a>
-                    
-                    
-                    <a href="" class="work__img">
-                        <img src="assets/img/pKamel.jpg" alt="">
-                    </a>
-                </div>
-            </section>
-
-                        <!--===== certificat =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Certificates</h2>
-
-                <div class="work__container bd-grid">
-                    <a href="https://certificates.cs50.io/176ee9b6-b42b-4c6d-9310-7366da68ce3c.pdf?size=letter" class="work__img">
-                        <img src="assets/img/CS50KAMEL.png" alt="">
-                    </a>
-                    
-                    <a href="https://www.coursera.org/account/accomplishments/certificate/KRUUBJRCD43S" class="work__img">
-                        <img src="assets/img/CertificatesAyoubKamel.jpg" alt="">
-                    </a>
-                    <a href="https://www.coursera.org/account/accomplishments/certificate/EM6Z83ELDFXJ" class="work__img">
-                        <img src="assets/img/cfa_ayoub_kamel.jpg" alt="">
-                    </a>
-                    <a href="https://www.coursera.org/account/accomplishments/certificate/2HFC9XKGWBET" class="work__img">
-                        <img src="assets/img/googleAyoubKamel.jpg" alt="">
-                    </a>
-                </div>
-            </section>
-
-
-            
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Professional Skills</h2>
-                        
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class="fa-brands fa-python skills__icon" style="color: #3e6ff4;"></i>
-                                <span class="skills__name">PYTHON</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class="bx bxl-html5 skills__icon" style="color: #005eff;"></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                        </div>
-                        
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class="fa-brands fa-square-js skills__icon" style="color: #3e6ff4;"></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class="fa-solid fa-scroll skills__icon" style="color: #3e6ff4;"></i>
-                                
-                                <span class="skills__name">VBA</span>
-                            </div>
-                        </div>
-                 <!--==   </div>
-                    
-            <div>==-->
-
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class="fa-solid fa-chart-simple skills__icon" style="color: #3e6ff4;"></i>
-                                <span class="skills__name">SPSS</span>
-                            </div>
-                        </div>
-                        
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='fa-solid fa-database skills__icon' style="color: #3e6ff4;"></i>
-                                <span class="skills__name">MYSQL</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class="fa-solid fa-chart-line skills__icon" style="color: #005eff;"></i>
-                                <span class="skills__name">EVIEWS</span>
-                            </div>
-                        </div>
-                
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class="fa-solid fa-file-excel skills__icon" style="color: #3e6ff4;"></i>
-                                <span class="skills__name">EXCEL</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='fa-solid fa-chart-line skills__icon' style="color: #3e6ff4;"></i>
-                                <span class="skills__name">METATRADER</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-            </section>
-
-            
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-        
-                <div class="about__container bd-grid">
-                    <div class="contact__container bd-grid">
-                        <form id="contact-form" class="contact__form">
-                            <input type="text" id="from_name" name="from_name" placeholder="Name" class="contact__input" required>
-                            <input type="email" id="from_email" name="from_email" placeholder="Email" class="contact__input" required>
-                            <textarea name="message" id="message" cols="0" rows="10" placeholder="Message" class="contact__input" required></textarea>
-                            <input type="submit" value="Send" class="contact__button button">
-                        </form>
-                    </div>
-                    <div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class="fa-solid fa-envelope skills__icon" style="color: #3e6ff4;"></i>
-                                <a href="mailto:ayoub@kamel.ma" target="_blank" class="skills__name">ayoub@kamel.ma</a>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class="fa-solid fa-phone skills__icon" style="color: #005eff;"></i>
-                                <a href="tel:+212772875656" class="skills__name">07 72 87 56 56</a>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-linkedin skills__icon'></i>
-                                <a href="https://www.linkedin.com/in/ayoub-kamel/" target="_blank" class="skills__name">Ayoub Kamel</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-        
-        
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Ayoub Kamel</p>
-            <div class="footer__social">
-                <a href="https://www.linkedin.com/in/ayoub-kamel/" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
-            </div>
-            <p class="footer__copy">&#169; . All rigths reserved</p>
-        </footer>
+<script src="app.js"></script>
 
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <!--===== MAIN JS =====-->
-        <script src="./assets/js/main.js"></script>
-
-
-
-          <script type="text/javascript">
-                // Ajoutez un événement pour gérer l'envoi du formulaire
-                document.getElementById('contact-form').addEventListener('submit', function(event) {
-                    event.preventDefault();
-        
-                    // Ces valeurs doivent être vos propres Service ID et Template ID
-                    const serviceID = 'service_6notghb';
-                    const templateID = 'template_0x9i09b';
-        
-                    // Envoyer le formulaire avec EmailJS
-                    emailjs.sendForm(serviceID, templateID, this)
-                        .then(() => {
-                            alert('E-mail envoyé avec succès!');
-                        }, (err) => {
-                            alert('Échec de l\'envoi de l\'e-mail!\n Réponse:\n ' + JSON.stringify(err));
-                        });
-                });
-            </script>
-    </body>
-</html>
+</body></html>

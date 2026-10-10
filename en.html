@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Ayoub Kamel</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Unbounded:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<header class="top">
+  <div class="top-in">
+    <a class="logo" href="#top">Ayoub<span>.</span>K</a>
+    <nav class="nav" aria-label="Navigation">
+      <a href="#profil">About</a>
+      <a href="#projets">Projects</a>
+      <a href="#parcours">Background</a>
+      <a href="#competences">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="pill-s" href="index.html" hreflang="fr" aria-label="Lire cette page en français">FR</a>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+  <div class="bg" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div></div>
+
+  <div class="hero">
+    <div class="h-name">
+      <p class="hello">Hello, I'm</p>
+      <h1 class="split">Ayoub<br><span class="acc">Kamel</span></h1>
+    </div>
+    <div class="h-photo">
+      <img src="portrait.png" width="487" height="669" alt="Portrait of Ayoub Kamel">
+    </div>
+    <div class="h-role">
+      <p class="r-small" data-words='["Engineering consultant","Capital markets","Pricing & risk","Portfolio management"]'><span class="typed">Engineering consultant</span></p>
+      <p class="r-big">Capital</p>
+      <p class="r-last split">Markets</p>
+    </div>
+    <div class="social">
+      <a href="https://www.linkedin.com/in/ayoub-kamel/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+      <a href="https://github.com/Ayoub-Kamel" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+    </div>
+    <a class="cv" href="https://kamel.ma/assets/CV%20Ayoub%20KAMEL.pdf" target="_blank" rel="noopener">My résumé ↗
+      <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><rect x="3" y="1.5" width="10" height="13" rx="1.5"/><path d="M5.5 5h5M5.5 8h5M5.5 11h3"/></svg>
+    </a>
+  </div>
+
+  <section id="profil">
+    <p class="eyebrow">About me</p>
+    <h2 class="sec-title">Capital markets, <span class="acc">from model to system</span></h2>
+    <div class="about">
+      <div>
+        <p>I am an <strong>engineering consultant in capital markets</strong>, working close to financial systems and portfolio management infrastructure.</p>
+        <p>I build pricing, risk and allocation models, and I am aiming for <strong>quantitative roles on the buy-side</strong>. My consulting background gives me an end-to-end view, from the model to its execution in production.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Role</dt><dd>Perenity Software</dd></div>
+        <div><dt>Education</dt><dd>Master's in Actuarial Science and Finance</dd></div>
+        <div><dt>Targets</dt><dd>Quant developer, quant analyst, risk analyst, then quant researcher</dd></div>
+        <div><dt>Based in</dt><dd>Morocco</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- YIELD CURVE SECTION (hidden: set SHOW_CURVE = True in build.py)
+  <section id="taux">
+    <p class="eyebrow">Yield curve</p>
+    <h2 class="sec-title">A <span class="acc">Nelson–Siegel</span> curve to play with</h2>
+    <p class="sec-sub">A four-parameter model, three curve shapes. Pick one, let them cycle, or hover the curve to read the rates.</p>
+    <div class="curve-wrap">
+      <div class="curve-card">
+        <div class="ctl" role="group" aria-label="Yield curve">
+          <button type="button" data-shape="0" aria-pressed="true">Normal</button>
+          <button type="button" data-shape="1" aria-pressed="false">Inverted</button>
+          <button type="button" data-shape="2" aria-pressed="false">Humped</button>
+          <button type="button" data-shape="auto" aria-pressed="false">Auto</button>
+        </div>
+        <canvas id="curve" role="img" aria-label="Animated yield curve, Nelson-Siegel model with illustrative parameters" data-shapes='["normal curve","inverted curve","humped curve"]'></canvas>
+        <div class="curve-cap">
+          <span>Nelson–Siegel · illustrative parameters</span>
+          <span>2s10s slope : <b id="slope" data-unit="bp">+0 bp</b></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  -->
+
+  <section id="projets">
+    <p class="eyebrow">Projects</p>
+    <h2 class="sec-title">I build <span class="acc">models</span> that run</h2>
+    <div class="filters" role="group" aria-label="Filter projects">
+      <button type="button" data-f="all" aria-pressed="true">All</button>
+      <button type="button" data-f="taux" aria-pressed="false">Rates & derivatives</button>
+      <button type="button" data-f="technique" aria-pressed="false">Technical analysis</button>
+      <button type="button" data-f="risque" aria-pressed="false">Portfolio & risk</button>
+      <button type="button" data-f="ml" aria-pressed="false">Series & ML</button>
+      <button type="button" data-f="outils" aria-pressed="false">Tools</button>
+    </div>
+    <div class="grid" id="grid">
+      <a class="card" data-cat="taux" href="https://www.bcpayoubkamel.tech/" target="_blank" rel="noopener"><span class="num"></span><div><span class="tag">Rates & derivatives</span><h3>Bond pricing</h3></div><span class="src">Website ↗</span></a>
+      <a class="card" data-cat="taux" href="https://drive.google.com/file/d/1Mabn7eFxiTonstooDIqXXkiKRAuujCUU/view?usp=sharing" target="_blank" rel="noopener"><span class="num"></span><div><span class="tag">Rates & derivatives</span><h3>Forward rate pricing</h3></div><span class="src">Drive ↗</span></a>
+      <a class="card" data-cat="taux" href="https://drive.google.com/file/d/1Mabn7eFxiTonstooDIqXXkiKRAuujCUU/view?usp=sharing" target="_blank" rel="noopener"><span class="num"></span><div><span class="tag">Rates & derivatives</span><h3>Option pricing</h3></div><span class="src">Drive ↗</span></a>
+      <a class="card" data-cat="risque" href="https://drive.google.com/file/d/13BaNPB31009Vk21qRz3pfpprnQJZrE1U/view?usp=sharing" target="_blank" rel="noopener"><span class="num"></span><div><span class="tag">Portfolio & risk</span><h3>Markowitz efficient frontier</h3></div><span class="src">Drive ↗</span></a>
+      <a class="card" data-cat="risque" href="https://www.kaggle.com/code/ayoubkamel/ratio-de-sharpe" target="_blank" rel="noopener"><span class="num"></span><div><span class="tag">Portfolio & risk</span><h3>Sharpe ratio</h3></div><span class="src">Kaggle ↗</span></a>
+      <a class="card" data-cat="risque" href="https://colab.research.google.com/drive/1csXJ4ZkbJiDf5wQ4_kfyNAeZDC-nnX9Q#scrollTo=sLu5CjQnK56g" target="_blank" rel="noopener"><span class="num"></span><div><span class="tag">Portfolio & risk</span><h3>Value at Risk (VaR)</h3></div><span class="src">Colab ↗</span></a>
+      <div class="card" data-cat="risque"><span class="num"></span><div><span class="tag">Portfolio & risk</span><h3>Monte Carlo simulation</h3></div><span class="src off">Link coming soon</span></div>
+      <a class="card" data-cat="risque" href="https://drive.google.com/drive/folders/1zagsCtFi2MKD0oTywIaFDMEymBTd_azq?usp=drive_link" target="_blank" rel="noopener"><span class="num"></span><div><span class="tag">Portfolio & risk</span><h3>Credit scoring</h3></div><span class="src">Drive ↗</span></a>
+      <a class="card" data-cat="technique" href="https://drive.google.com/file/d/1t0rE2QC9zNjKZiMy201FVcgJj5Ct6lx-/view?usp=sharing" target="_blank" rel="noopener"><span class="num"></span><div><span class="tag">Technical analysis</span><h3>MACD</h3></div><span class="src">Drive ↗</span></a>
+      <a class="card" data-cat="technique" href="https://drive.google.com/file/d/1rO6rqFaavmwRbBv5Nsbc-uTRsEGCfRs1/view?usp=sharing" target="_blank" rel="noopener"><span class="num"></span><div><span class="tag">Technical analysis</span><h3>MMS</h3></div><span class="src">Drive ↗</span></a>
+      <a class="card" data-cat="technique" href="https://drive.google.com/file/d/1ZUn9KcDIXI8gghM-ZspJ47xGkn_NDNld/view?usp=sharing" target="_blank" rel="noopener"><span class="num"></span><div><span class="tag">Technical analysis</span><h3>Stochastic oscillator</h3></div><span class="src">Drive ↗</span></a>
+      <a class="card" data-cat="technique" href="https://drive.google.com/file/d/1yRmofG99SST9muFp4BXlAJ6tRrqro_Gw/view?usp=sharing" target="_blank" rel="noopener"><span class="num"></span><div><span class="tag">Technical analysis</span><h3>Williams %R</h3></div><span class="src">Drive ↗</span></a>
+      <a class="card" data-cat="technique" href="https://drive.google.com/file/d/1yhnfxXp2px5q815b0VUwt26OBjDOOoF8/view?usp=sharing" target="_blank" rel="noopener"><span class="num"></span><div><span class="tag">Technical analysis</span><h3>RSI</h3></div><span class="src">Drive ↗</span></a>
+      <a class="card" data-cat="technique" href="https://drive.google.com/file/d/155zSS99X3NWVf2kWE3ebw7eYvkcrSahj/view?usp=sharing" target="_blank" rel="noopener"><span class="num"></span><div><span class="tag">Technical analysis</span><h3>Ichimoku</h3></div><span class="src">Drive ↗</span></a>
+      <a class="card" data-cat="ml" href="https://colab.research.google.com/drive/1ept0Frx27l2RfmZRSj9Oum5j0uNtJRij#scrollTo=8slsjHJ61g-G" target="_blank" rel="noopener"><span class="num"></span><div><span class="tag">Time series & ML</span><h3>LSTM forecasting</h3></div><span class="src">Colab ↗</span></a>
+      <a class="card" data-cat="ml" href="https://www.kaggle.com/code/ayoubkamel/mod-le-arima-avec-python-pr-visions-de-s-ries-te" target="_blank" rel="noopener"><span class="num"></span><div><span class="tag">Time series & ML</span><h3>Price forecasting with ARIMA</h3></div><span class="src">Kaggle ↗</span></a>
+      <a class="card" data-cat="outils" href="https://github.com/Ayoub-Kamel/KAW-Scraper/tree/master" target="_blank" rel="noopener"><span class="num"></span><div><span class="tag">Tools</span><h3>KAW Scraper</h3></div><span class="src">GitHub ↗</span></a>
+    </div>
+  </section>
+
+  <section id="parcours">
+    <p class="eyebrow">Work experience</p>
+    <h2 class="sec-title">My <span class="acc">background</span></h2>
+    <div class="tabs" role="tablist">
+      <button type="button" role="tab" data-tab="exp" aria-selected="true">Experience</button>
+      <button type="button" role="tab" data-tab="edu" aria-selected="false">Education</button>
+    </div>
+    <div class="panel wide" data-panel="exp" role="tabpanel">
+      <div class="timeline">
+        <div class="tl-line" aria-hidden="true"><div class="tl-fill"></div></div>
+        <div class="tl-item">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <div class="entry">
+            <span class="tl-tag">Current role</span>
+            <h3>Engineering consultant, capital markets</h3>
+            <div class="who">Perenity Software</div>
+            <p>Engagements around financial systems and portfolio management infrastructure.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <div class="entry">
+            <h3>Equity Trader</h3>
+            <div class="who">Banque Centrale Populaire (BCP)</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <div class="entry">
+            <h3>IT Supplier Management Lead</h3>
+            <div class="who">Crédit du Maroc</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <div class="entry">
+            <span class="tl-tag">Where it started</span>
+            <h3>Treasury Management</h3>
+            <div class="who">CNSS</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel" data-panel="edu" role="tabpanel" hidden>
+      <div class="entry">
+        <h3>Master's in Actuarial Science and Finance</h3>
+        <div class="who">Actuarial science and finance</div>
+        <p>Foundation in probability, statistics and financial modelling.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificats">
+    <p class="eyebrow">Certificates</p>
+    <h2 class="sec-title">Completed <span class="acc">courses</span></h2>
+    <div class="marquee">
+      <div class="track" id="track">
+        <div class="group">
+          <a class="cert" href="https://certificates.cs50.io/176ee9b6-b42b-4c6d-9310-7366da68ce3c.pdf?size=letter" target="_blank" rel="noopener"><b>CS50</b><span>View certificate ↗</span></a>
+          <a class="cert" href="https://www.coursera.org/account/accomplishments/certificate/KRUUBJRCD43S" target="_blank" rel="noopener"><b>Coursera</b><span>View certificate ↗</span></a>
+          <a class="cert" href="https://www.coursera.org/account/accomplishments/certificate/EM6Z83ELDFXJ" target="_blank" rel="noopener"><b>Coursera · CFA</b><span>View certificate ↗</span></a>
+          <a class="cert" href="https://www.coursera.org/account/accomplishments/certificate/2HFC9XKGWBET" target="_blank" rel="noopener"><b>Coursera · Google</b><span>View certificate ↗</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="competences">
+    <p class="eyebrow">What I offer</p>
+    <h2 class="sec-title"><span class="acc">Technical</span> and financial skills</h2>
+    <div class="two">
+      <div class="box">
+        <h3>Languages and tools</h3>
+        <p>The base to model, automate and deliver.</p>
+        <ul class="chips"><li>Python</li><li>VBA</li><li>Excel</li><li>MySQL</li><li>JavaScript</li><li>HTML5</li><li>CSS3</li><li>SPSS</li><li>EViews</li><li>MetaTrader</li><li>i-net Crystal-Clear</li><li>Crystal Reports</li><li>Oracle DB</li></ul>
+      </div>
+      <div class="box">
+        <h3>Finance domains</h3>
+        <p>Pricing, risk and allocation, backed by real systems.</p>
+        <ul class="chips">
+          <li>Rates pricing</li>
+          <li>Options</li>
+          <li>Markowitz</li>
+          <li>VaR</li>
+          <li>Monte Carlo</li>
+          <li>Credit scoring</li>
+          <li>ARIMA</li>
+          <li>LSTM</li>
+          <li>Technical analysis</li>
+          <li>Portfolio management</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <div>
+        <p class="eyebrow" style="text-align:left">Contact</p>
+        <h2>Tell me about your next <span class="acc">project</span></h2>
+        <div class="mail-addr" id="addr">ayoub@kamel.ma</div>
+        <button class="btn" id="copy" type="button" data-done="Copied">Copy email</button>
+      </div>
+      <dl class="info">
+        <div><dt>E-mail</dt><dd>ayoub@kamel.ma</dd></div>
+        <div><dt>Phone</dt><dd>+212 7 72 87 56 56</dd></div>
+        <div><dt>Based in</dt><dd>Morocco</dd></div>
+        <div><dt>Social</dt><dd><a href="https://www.linkedin.com/in/ayoub-kamel/" target="_blank" rel="noopener">LinkedIn ↗</a> · <a href="https://github.com/Ayoub-Kamel" target="_blank" rel="noopener">GitHub ↗</a></dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span>© 2026 Ayoub Kamel</span>
+  <span>All rights reserved</span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
